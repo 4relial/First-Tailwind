@@ -1,0 +1,182 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ilham/tailwind.js"></script>
+</head>
+
+<body>
+    <script>
+        function klik() {
+            var x = document.getElementById("il");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <div class="flex flex-col min-h-screen">
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <span class="font-semibold text-xl tracking-tight">Blessing Software</span>
+        </div>
+        <div class="block lg:hidden">
+            <button onclick="klik()"
+                class="mobile-menu-button flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+        <div id="il" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+            <div class="text-sm lg:flex-grow">
+                <a href="index.html"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                    Home
+                </a>
+                <a href="profile.html"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                    Profile
+                </a>
+                <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+                    About
+                </a>
+            </div>
+            <div>
+                <a href="https://wa.me/6282284739859"
+                    class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">WhatsApp</a>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="bg-gray-100 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="grid gap-10 lg:grid-cols-2">
+          <div class="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
+            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
+              <svg class="text-teal-900 w-7 h-7" viewBox="0 0 24 24">
+                <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points=" 8,5 8,1 16,1 16,5" stroke-linejoin="round"></polyline>
+                <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="9,15 1,15 1,5 23,5 23,15 15,15" stroke-linejoin="round"></polyline>
+                <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="22,18 22,23 2,23 2,18" stroke-linejoin="round"></polyline>
+                <rect x="9" y="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" width="6" height="4" stroke-linejoin="round"></rect>
+              </svg>
+            </div>
+            <div class="max-w-xl mb-6">
+              <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                Biarkan kami membantu<br class="hidden md:block" />
+                masalah kamu
+                <span class="inline-block text-deep-purple-accent-400">selanjutnya</span>
+              </h2>
+              <p class="text-base text-gray-700 md:text-lg">
+                Blessing software bergerak dalam bidang teknologi informasi, kami merupakan badan usaha yang bergerak di bidang penjualan produk komputer, baik hardware maupun software.
+              </p>
+            </div>
+            <div>
+              <a href="https://wa.me/6282284739859" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
+                Learn more
+                <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
+                  <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center justify-center -mx-4 lg:pl-8">
+            <div class="flex flex-col items-end px-3">
+              <img
+                class="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
+                src="image/2a.jpeg"
+                alt=""
+              />
+              <img class="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40" src="image/2b.jpg" alt="" />
+            </div>
+            <div class="px-3">
+              <img class="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80" src="image/2c.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+            <div class="lg:flex lg:items-center">
+                <div class="w-full space-y-12 lg:w-1/2 ">
+                    <div>
+                        <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">kembangkan bisnismu <br> bersama kami</h1>
+                    
+                        <div class="mt-2">
+                            <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
+                            <span class="inline-block w-3 h-1 ml-1 rounded-full bg-blue-500"></span>
+                            <span class="inline-block w-1 h-1 ml-1 rounded-full bg-blue-500"></span>
+                        </div>
+                    </div>
+
+                    <div class="md:flex md:items-start md:-mx-4">
+                        <span class="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                            </svg>
+                        </span>
+
+                        <div class="mt-4 md:mx-4 md:mt-0">
+                            <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Visi</h1>
+
+                            <p class="mt-3 text-gray-500 dark:text-gray-300">
+                                Mengembangkan bisnis pemasaran komputer baik hardware maupun software yang sehat dengan memperluas jaringan ritel.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="md:flex md:items-start md:-mx-4">
+                        <span class="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                            </svg>
+                        </span>
+
+                        <div class="mt-4 md:mx-4 md:mt-0">
+                            <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Misi</h1>
+
+                            <p class="mt-3 text-gray-500 dark:text-gray-300">
+                                Memberikan pengalaman belanja yang nyaman dengan didukung pelayanan yang baik
+Mengembangkan pasar di Urban dan Sub-Urban
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="md:flex md:items-start md:-mx-4">
+                        <span class="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                            </svg>
+                        </span>
+
+                        <div class="mt-4 md:mx-4 md:mt-0">
+                            <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Jenis Usaha</h1>
+
+                            <p class="mt-3 text-gray-500 dark:text-gray-300">
+                                IT Galeri bergerak di bidang perdagangan yang menjual berbagai aneka macam perangkat keras komputer (hardware) dan perangkat lunak (software).
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
+                    <img class="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full" src="image/company.jpg" alt="">
+                </div>
+            </div>
+    </section>
+    </div>
+    
+    <footer class="text-center text-white bg-teal-500 bottom-0">
+        <div class="text-center text-gray-100 p-4">
+            © 2022 Copyright:
+            <a class="text-gray-50" href="https://github.com/4relial">
+                &nbsp;Blessing Software
+            </a>
+        </div>
+    </footer></div> </body>
+
+</html>

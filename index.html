@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ilham/tailwind.js"></script>
+</head>
+
+<body>
+    <script>
+        function klik() {
+            var x = document.getElementById("il");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <div class="flex flex-col min-h-screen">
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            
+            <span class="font-semibold text-xl tracking-tight">Blessing Software</span>
+        </div>
+        <div class="block lg:hidden">
+            <button onclick="klik()"
+                class="mobile-menu-button flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+        <div id="il" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+            <div class="text-sm lg:flex-grow">
+                <a href="index.html"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                    Home
+                </a>
+                <a href="profile.html"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                    Profile
+                </a>
+                <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+                    About
+                </a>
+            </div>
+            <div>
+                <a href="https://wa.me/6282284739859"
+                    class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">WhatsApp</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="w-full bg-center bg-cover h-[32rem]" style="background-image: url(image/bgh.jpg);">
+            <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50">
+                <div class="text-center">
+                    <h1 class="text-2xl font-semibold text-white uppercase lg:text-3xl">Selamat datang di <span class="text-blue-400 underline">Blessing software</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>             
+    
+    <section class="bg-gray-100 dark:bg-gray-900 lg:py-12 lg:flex lg:justify-center">
+        <div class="bg-white dark:bg-gray-800 lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg">
+            <div class="lg:w-1/2">
+                <div class="h-64 bg-cover lg:rounded-lg lg:h-full" style="background-image:url('image/newweb.jpg')"></div>
+            </div>
+
+            <div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">Build Your New <span class="text-blue-600 dark:text-blue-400">Website</span></h2>
+                <p class="mt-4 text-gray-600 dark:text-gray-400">Serahkan masalah web untuk usaha atau perusahaanmu di Blessing Software. Dari budaya kami memberikan produk dan layanan advanced technology yang tepat untuk pelanggan.</p>
+                
+                <div class="mt-8">
+                    <a href="https://wa.me/6282284739859" class="px-5 py-2 font-semibold text-gray-100 transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    </div>
+    <footer class="text-center text-white bg-teal-500 bottom-0">
+        <div class="text-center text-gray-100 p-4">
+            © 2022 Copyright:
+            <a class="text-gray-50" href="https://github.com/4relial">
+                &nbsp;Blessing Software
+            </a>
+        </div>
+    </footer></div> </body>
+
+</html>
